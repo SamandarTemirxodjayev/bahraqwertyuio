@@ -2,7 +2,7 @@
   <div>
     <div class="mx-4 my-2 flex flex-row justify-between items-center text-2xl">
       <div>
-        <img src="/logo.png" alt="Logo" />
+        <NuxtLink to="/"><img src="/logo.png" alt="Logo" /></NuxtLink>
       </div>
       <div>
         <ul class="flex flex-row">
