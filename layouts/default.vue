@@ -67,9 +67,6 @@
           <span class="text-xl cursor-pointer"
             ><NuxtLink to="/">Aksiyalar</NuxtLink></span
           >
-          <span class="text-xl cursor-pointer"
-            ><NuxtLink to="/">Kontaktla</NuxtLink>r</span
-          >
         </div>
         <div class="flex flex-col">
           <div class="flex-row flex">
@@ -86,6 +83,13 @@
           <div class="mt-1 font-semibold">+998 (90) 000 00 00</div>
           <div class="font-semibold">Call center</div>
         </div>
+      </div>
+      <img src="/line.png" alt="" class="mx-auto py-10 object-cover" />
+      <div
+        class="text-center items-center justify-between mx-32 flex font-semibold"
+      >
+        <span>© "Bahra Chickens", 2023</span>
+        <span>Barcha huquqlar himoyalangan.</span>
       </div>
     </div>
   </div>
