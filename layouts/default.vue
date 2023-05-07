@@ -13,13 +13,13 @@
             <NuxtLink to="/about"><span>Haqida</span></NuxtLink>
           </li>
           <li class="mx-4">
-            <NuxtLink to="/"><span>Mahsulotlar</span></NuxtLink>
+            <NuxtLink to="/producs"><span>Mahsulotlar</span></NuxtLink>
           </li>
           <li class="mx-4">
             <NuxtLink to="/contact"><span>Aloqa</span></NuxtLink>
           </li>
           <li class="flex items-center mx-4">
-            <NuxtLink to="/" class="flex items-center">
+            <NuxtLink to="/cart" class="flex items-center">
               <span class="mr-2">Savatcha</span>
               <img src="/cart.png" alt="" class="h-5 w-5" />
             </NuxtLink>
