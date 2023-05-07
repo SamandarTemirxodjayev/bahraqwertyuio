@@ -1,0 +1,92 @@
+<template>
+  <div>
+    <div class="mx-4 my-2 flex flex-row justify-between items-center text-2xl">
+      <div>
+        <img src="/logo.png" alt="Logo" />
+      </div>
+      <div>
+        <ul class="flex flex-row">
+          <li class="mx-4">
+            <NuxtLink to="/"><span>Asosiy</span></NuxtLink>
+          </li>
+          <li class="mx-4">
+            <NuxtLink to="/about"><span>Haqida</span></NuxtLink>
+          </li>
+          <li class="mx-4">
+            <NuxtLink to="/"><span>Mahsulotlar</span></NuxtLink>
+          </li>
+          <li class="mx-4">
+            <NuxtLink to="/contact"><span>Aloqa</span></NuxtLink>
+          </li>
+          <li class="flex items-center mx-4">
+            <NuxtLink to="/" class="flex items-center">
+              <span class="mr-2">Savatcha</span>
+              <img src="/cart.png" alt="" class="h-5 w-5" />
+            </NuxtLink>
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-row text-center">
+        <ul class="flex flex-row">
+          <li class="mx-2">
+            <NuxtLink to="/"><img src="/like.png" alt="" /></NuxtLink>
+          </li>
+          <li class="mx-2">
+            <NuxtLink to="/"><img src="/telegram.png" alt="" /></NuxtLink>
+          </li>
+          <li class="mx-2">
+            <NuxtLink to="/"><img src="/instagram.png" alt="" /></NuxtLink>
+          </li>
+          <li class="mx-2">
+            <NuxtLink to="/"><img src="/facebook.png" alt="" /></NuxtLink>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr class="bg-gray-400" />
+    <NuxtPage />
+    <div class="bg-yellow-300 mx-auto">
+      <div class="mx-10 mr-32 flex flex-row justify-between items-center">
+        <div>
+          <img src="/footerlogo.png" alt="" />
+        </div>
+        <div class="flex flex-col">
+          <h2 class="text-2xl font-medium">Mahsulotlar</h2>
+          <span class="text-xl cursor-pointer"
+            ><NuxtLink to="/">Aksiyalar</NuxtLink></span
+          >
+          <span class="text-xl cursor-pointer"
+            ><NuxtLink to="/">Kontaktla</NuxtLink>r</span
+          >
+        </div>
+        <div class="flex flex-col">
+          <h2 class="text-2xl font-medium">Korxona haqida</h2>
+          <span class="text-xl cursor-pointer"
+            ><NuxtLink to="/">Hamkorlar</NuxtLink></span
+          >
+          <span class="text-xl cursor-pointer"
+            ><NuxtLink to="/">Aksiyalar</NuxtLink></span
+          >
+          <span class="text-xl cursor-pointer"
+            ><NuxtLink to="/">Kontaktla</NuxtLink>r</span
+          >
+        </div>
+        <div class="flex flex-col">
+          <div class="flex-row flex">
+            <NuxtLink to="/"
+              ><img src="/telegram.png" alt="" class="mx-2 cursor-pointer"
+            /></NuxtLink>
+            <NuxtLink to="/"
+              ><img src="/instagram.png" alt="" class="mx-2 cursor-pointer"
+            /></NuxtLink>
+            <NuxtLink to="/"
+              ><img src="/facebook.png" alt="" class="mx-2 cursor-pointer"
+            /></NuxtLink>
+          </div>
+          <div class="mt-1 font-semibold">+998 (90) 000 00 00</div>
+          <div class="font-semibold">Call center</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
