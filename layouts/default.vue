@@ -45,7 +45,7 @@
     </div>
     <hr class="bg-gray-400" />
     <NuxtPage />
-    <div class="bg-yellow-300 mx-auto">
+    <div class="mx-auto" style="background-color: #F9E01A;">
       <div class="mx-10 mr-32 flex flex-row justify-between items-center">
         <div>
           <img src="/footerlogo.png" alt="" />
