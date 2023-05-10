@@ -13,7 +13,7 @@
             <NuxtLink to="/about"><span>Haqida</span></NuxtLink>
           </li>
           <li class="mx-4">
-            <NuxtLink to="/producs"><span>Mahsulotlar</span></NuxtLink>
+            <NuxtLink to="/products"><span>Mahsulotlar</span></NuxtLink>
           </li>
           <li class="mx-4">
             <NuxtLink to="/contact"><span>Aloqa</span></NuxtLink>
