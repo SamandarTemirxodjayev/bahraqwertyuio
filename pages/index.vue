@@ -6,7 +6,7 @@
         <p class="my-6" style="color: #f9e01a">go‘shtini</p>
         <p class="my-6">bizdan oling</p>
       </div>
-      <div class="items-center py-[3%]">
+      <div class="items-center py-[6%] px-[95px]">
         <img src="/main.png" alt="" />
       </div>
     </section>
