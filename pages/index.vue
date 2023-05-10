@@ -40,6 +40,25 @@
         </div>
       </div>
     </section>
+    <section>
+      <h1 class="flex justify-center font-semibold text-5xl pt-[4%]">
+        Bizning hamkorlar
+      </h1>
+      <div class="flex items-center justify-between mt-[10%]">
+        <div>
+          <img src="/korzinka.png" alt="">
+        </div>
+        <div>
+          <img src="/havas.png" alt="">
+        </div>
+        <div>
+          <img src="/qanotchi.png" alt="">
+        </div>
+        <div>
+          <img src="/magnum.png" alt="">
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 <script setup lang="ts">
