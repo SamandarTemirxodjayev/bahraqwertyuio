@@ -7,9 +7,7 @@
             <img src="/backicon.png" alt="" />
           </div>
         </NuxtLink>
-        <div class="">
-          <h1 class="font-semibold text-5xl">Savatcha</h1>
-        </div>
+        <h1 class="font-semibold text-5xl">Savatcha</h1>
         <div></div>
       </div>
       <div class="flex flex-col mx-16">
@@ -37,7 +35,9 @@
           </NuxtLink>
         </div>
         <div class="bg-yellow-300 py-4 rounded-xl px-8">
-          <button>Sotuvni tasdiqlash</button>
+          <NuxtLink to="/cart/submit">
+            <button>Sotuvni tasdiqlash</button>
+          </NuxtLink>
         </div>
       </div>
     </div>

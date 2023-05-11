@@ -11,7 +11,7 @@
       </div>
     </section>
     <section
-      class="bg-no-repeat object-cover min-h-[810px] mt-[5%]"
+      class="bg-no-repeat min-h-[810px] mt-[5%]"
       style="background-image: url('/section2.png')"
     >
       <h1 class="ml-[20%] font-semibold text-5xl pt-[4%]">

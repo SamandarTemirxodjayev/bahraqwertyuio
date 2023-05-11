@@ -25,19 +25,13 @@
           </li>
         </ul>
       </div>
-      <div class="flex flex-row text-center">
-        <ul class="flex flex-row">
+      <div class="flex flex-row text-center ">
+        <ul class="flex flex-row items-center">
           <li class="mx-2">
             <NuxtLink to="/"><img src="/like.png" alt="" /></NuxtLink>
           </li>
           <li class="mx-2">
-            <NuxtLink to="/"><img src="/telegram.png" alt="" /></NuxtLink>
-          </li>
-          <li class="mx-2">
-            <NuxtLink to="/"><img src="/instagram.png" alt="" /></NuxtLink>
-          </li>
-          <li class="mx-2">
-            <NuxtLink to="/"><img src="/facebook.png" alt="" /></NuxtLink>
+            <NuxtLink to="/cart"><img src="/bag.png" alt="" /></NuxtLink>
           </li>
         </ul>
       </div>
