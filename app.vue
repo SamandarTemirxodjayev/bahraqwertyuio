@@ -23,6 +23,6 @@
 .rotate-enter-from,
 .rotate-leave-to {
   opacity: 0;
-  transform: rotate3d(1, 1, 1, 90deg);
+  transform: rotate3d(1, 1, 3, 60deg);
 }
 </style>

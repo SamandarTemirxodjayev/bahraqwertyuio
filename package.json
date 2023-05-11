@@ -13,6 +13,10 @@
     "nuxt": "^3.4.3"
   },
   "dependencies": {
-    "@nuxtjs/tailwindcss": "^6.6.7"
+    "@nuxtjs/tailwindcss": "^6.6.7",
+    "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
+    "@pinia/nuxt": "^0.4.10",
+    "pinia": "^2.0.36",
+    "pinia-plugin-persistedstate": "^3.1.0"
   }
 }
