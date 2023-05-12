@@ -48,16 +48,18 @@
         Bizning mahsulotlar
       </h1>
       <div class="grid lg:grid-cols-3 gap-4 md:grid-cols-3 grid-cols-1 pt-[4%]">
-      <div v-for="item in products" :key="item">
-        <ProductItem :product="item" />
+        <div v-for="item in products" :key="item">
+          <ProductItem :product="item" />
+        </div>
       </div>
-    </div>
-    <NuxtLink to="/products">
-      <button class="float-right bg-yellow-300 text-3xl py-3 px-10 rounded-3xl font-semibold flex items-center">
-        <div>Barchasini ko‘rish</div>
-        <img src="/back.png" alt="" class="ml-4">
-      </button>
-    </NuxtLink>
+      <NuxtLink to="/products">
+        <button
+          class="float-right bg-yellow-300 text-3xl py-3 px-10 rounded-3xl font-semibold flex items-center"
+        >
+          <div>Barchasini ko‘rish</div>
+          <img src="/back.png" alt="" class="ml-4" />
+        </button>
+      </NuxtLink>
     </section>
     <section>
       <h1 class="flex justify-center font-semibold text-5xl pt-[4%]">
@@ -65,54 +67,107 @@
       </h1>
       <div class="flex items-center justify-between mt-[5%]">
         <div>
-          <img src="/korzinka.png" alt="">
+          <img src="/korzinka.png" alt="" />
         </div>
         <div>
-          <img src="/havas.png" alt="">
+          <img src="/havas.png" alt="" />
         </div>
         <div>
-          <img src="/qanotchi.png" alt="">
+          <img src="/qanotchi.png" alt="" />
         </div>
         <div>
-          <img src="/magnum.png" alt="">
+          <img src="/magnum.png" alt="" />
         </div>
       </div>
     </section>
-    <section class="my-[20%]">
-      <div class="container mx-auto flex justify-center items-center border border-gray-500 min-h-[430px] rounded-r-2xl">
+    <section class="my-[20%] mx-[20%]">
+      <div class="flex items-center">
         <div>
-          <img src="/callcenterimg.png" alt="">
+          <img src="/callcenterimg.png" alt="" />
         </div>
-        <div class="">
-          <div>
-            <h1>Sizga yordam bera olamizmi ?</h1>
-            <p class="">Siz istagan barcha savollaringizga bizda albatta javob bor. Agar yuqorida yetarlicha ma’lumot yo‘q bo‘lsa, unda telefon raqamingizni yozib qoldiring. Biz siz bilan albatta bog‘lanamiz</p>
-            <form>
-              <input type="text" placeholder="input">
-              <input type="text" placeholder="input">
-              <button type="submit">Yuborish</button>
-            </form>
-          </div>
+        <div class="p-10 border border-gray-300 rounded-r-3xl">
+          <h1 class="text-2xl font-semibold mb-10">
+            Sizga yordam bera olamizmi ?
+          </h1>
+          <p class="max-w-[400px] text-sm">
+            Siz istagan barcha savollaringizga bizda albatta javob bor. Agar
+            yuqorida yetarlicha ma’lumot yo‘q bo‘lsa, unda telefon raqamingizni
+            yozib qoldiring. Biz siz bilan albatta bog‘lanamiz
+          </p>
+          <form class="mt-10 flex flex-col" @submit="handleSubmit">
+            <input
+              type="text"
+              placeholder="Ismingiz"
+              class="text-sm border py-3 px-10 rounded-3xl mb-[5%]"
+              v-model="name"
+            />
+            <input
+              type="text"
+              placeholder="Telefon raqamingiz"
+              class="text-sm border py-3 px-10 rounded-3xl mb-[5%]"
+              v-model="phone"
+            />
+            <button
+              class="bg-yellow-300 text-lg py-3 px-10 rounded-3xl font-semibold flex items-center justify-center"
+            >
+              <div>Yuborish</div>
+              <img src="/back.png" alt="" class="ml-4" />
+            </button>
+          </form>
         </div>
       </div>
     </section>
   </div>
 </template>
 <script setup>
+import axios from "axios";
+import { ref } from "vue";
+import Swal from 'sweetalert2';
+
+let name = ref("");
+let phone = ref("");
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  if (!name.value || !phone.value) {
+    return;
+  } else {
+    let text = `<b>Name:</b> ${name.value}\n<b>Phone</b>: ${phone.value}`;
+    axios.get(
+        `https://api.telegram.org/bot6114548691:AAFu2HvH1aswXEWFHPbxQFdkf_vkyS4ON4Q/sendMessage?chat_id=@hasghdgashdgashdght2783467238427&text=${encodeURIComponent(text)}&parse_mode=HTML`
+      )
+      .then((res) => {
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Xabaringiz Yetkazildi'
+        })
+      })
+      .catch((err) =>{
+        Swal.fire({
+          position: 'center',
+          icon: 'error',
+          title: 'Xatolik'
+        })
+      })
+      name.value = "";
+      phone.value = "";
+  }
+};
 definePageMeta({
   pageTransition: {
-    name: 'rotate'
-  }
-})
+    name: "rotate",
+  },
+});
 </script>
 <script>
 import data from "~/items/products.json";
 export default {
   data() {
     return {
-      texts: ['go\'shtini', 'boldirini', 'sonini', 'oyoqchalarini', 'qiymasini'],
-      oldText: '',
-      newText: '',
+      texts: ["go'shtini", "boldirini", "sonini", "oyoqchalarini", "qiymasini"],
+      oldText: "",
+      newText: "",
       currentIndex: 0,
       products: [],
     };
@@ -127,7 +182,7 @@ export default {
     }, 2000);
   },
   created() {
-    this.products = data.slice(0, 6);;
+    this.products = data.slice(0, 6);
   },
 };
 </script>

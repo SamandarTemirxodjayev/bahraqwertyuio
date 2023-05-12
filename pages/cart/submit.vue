@@ -44,6 +44,8 @@
 import { ref, computed } from "vue";
 import axios from "axios";
 import { useCounterStore } from "~/store";
+import Swal from 'sweetalert2';
+
 const counterStore = useCounterStore();
 if (counterStore.count.length === 0) {
   navigateTo("/products");
@@ -73,7 +75,11 @@ const handleSubmit = (e) => {
         `https://api.telegram.org/bot6114548691:AAFu2HvH1aswXEWFHPbxQFdkf_vkyS4ON4Q/sendMessage?chat_id=@hasghdgashdgashdght2783467238427&text=${encodeURIComponent(text)}&parse_mode=HTML`
       )
       .then((res) => {
-        alert("Tez orada siz bilan operatorlar bog'lanadi");
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Tez orada siz bilan operatorlar bog\'lanadi'
+        })
         counterStore.resetAll();
         navigateTo("/products");
       })
