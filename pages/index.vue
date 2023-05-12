@@ -3,7 +3,10 @@
     <section class="justify-between flex">
       <div class="text-8xl font-semibold">
         <p class="my-6">Tovuq</p>
-        <p class="my-6" style="color: #f9e01a">go‘shtini</p>
+        <div class="text-animation" style="color: #f9e01a">
+          <span class="old-text" :key="currentIndex">{{ oldText }}</span>
+          <span class="new-text">{{ newText }}</span>
+        </div>
         <p class="my-6">bizdan oling</p>
       </div>
       <div class="items-center py-[6%] px-[95px]">
@@ -61,10 +64,76 @@
     </section>
   </div>
 </template>
-<script setup lang="ts">
+<script setup>
 definePageMeta({
   pageTransition: {
     name: 'rotate'
   }
 })
 </script>
+<script>
+export default {
+  data() {
+    return {
+      texts: ['go\'shtini', 'boldirini', 'sonini', 'oyoqchalarini', 'qiymasini'],
+      oldText: '',
+      newText: '',
+      currentIndex: 0
+    };
+  },
+  mounted() {
+    this.oldText = this.texts[0];
+    this.newText = this.texts[1];
+    setInterval(() => {
+      this.currentIndex = (this.currentIndex + 1) % this.texts.length;
+      this.oldText = this.newText;
+      this.newText = this.texts[this.currentIndex];
+    }, 2000);
+  }
+};
+</script>
+
+<style>
+.text-animation {
+  position: relative;
+  height: 1em;
+}
+
+.old-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  animation: slideup 2s;
+}
+
+.new-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: slidedown 2s;
+}
+
+@keyframes slideup {
+  from {
+    top: 0;
+    opacity: 1;
+  }
+  to {
+    top: -1.5em;
+    opacity: 0;
+  }
+}
+
+@keyframes slidedown {
+  from {
+    bottom: -1.5em;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+</style>
