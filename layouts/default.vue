@@ -28,7 +28,7 @@
       <div class="flex flex-row text-center ">
         <ul class="flex flex-row items-center">
           <li class="mx-2">
-            <NuxtLink to="/"><img src="/like.png" alt="" /></NuxtLink>
+            <NuxtLink to="/loved"><img src="/like.png" alt="" /></NuxtLink>
           </li>
           <li class="mx-2">
             <NuxtLink to="/cart"><img src="/bag.png" alt="" /></NuxtLink>
