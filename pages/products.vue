@@ -18,8 +18,6 @@ definePageMeta({
 <script>
 import data from "~/items/products.json";
 export default {
-  watch: {
-  },
   data() {
     return {
       products: [],

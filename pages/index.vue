@@ -43,11 +43,27 @@
         </div>
       </div>
     </section>
+    <section class="mb-[10%]">
+      <h1 class="flex justify-center font-semibold text-5xl pt-[4%]">
+        Bizning mahsulotlar
+      </h1>
+      <div class="grid lg:grid-cols-3 gap-4 md:grid-cols-3 grid-cols-1 pt-[4%]">
+      <div v-for="item in products" :key="item">
+        <ProductItem :product="item" />
+      </div>
+    </div>
+    <NuxtLink to="/products">
+      <button class="float-right bg-yellow-300 text-3xl py-3 px-10 rounded-3xl font-semibold flex items-center">
+        <div>Barchasini ko‘rish</div>
+        <img src="/back.png" alt="" class="ml-4">
+      </button>
+    </NuxtLink>
+    </section>
     <section>
       <h1 class="flex justify-center font-semibold text-5xl pt-[4%]">
         Bizning hamkorlar
       </h1>
-      <div class="flex items-center justify-between mt-[10%]">
+      <div class="flex items-center justify-between mt-[5%]">
         <div>
           <img src="/korzinka.png" alt="">
         </div>
@@ -62,6 +78,24 @@
         </div>
       </div>
     </section>
+    <section class="my-[20%]">
+      <div class="container mx-auto flex justify-center items-center border border-gray-500 min-h-[430px] rounded-r-2xl">
+        <div>
+          <img src="/callcenterimg.png" alt="">
+        </div>
+        <div class="">
+          <div>
+            <h1>Sizga yordam bera olamizmi ?</h1>
+            <p class="">Siz istagan barcha savollaringizga bizda albatta javob bor. Agar yuqorida yetarlicha ma’lumot yo‘q bo‘lsa, unda telefon raqamingizni yozib qoldiring. Biz siz bilan albatta bog‘lanamiz</p>
+            <form>
+              <input type="text" placeholder="input">
+              <input type="text" placeholder="input">
+              <button type="submit">Yuborish</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 <script setup>
@@ -72,13 +106,15 @@ definePageMeta({
 })
 </script>
 <script>
+import data from "~/items/products.json";
 export default {
   data() {
     return {
       texts: ['go\'shtini', 'boldirini', 'sonini', 'oyoqchalarini', 'qiymasini'],
       oldText: '',
       newText: '',
-      currentIndex: 0
+      currentIndex: 0,
+      products: [],
     };
   },
   mounted() {
@@ -89,7 +125,10 @@ export default {
       this.oldText = this.newText;
       this.newText = this.texts[this.currentIndex];
     }, 2000);
-  }
+  },
+  created() {
+    this.products = data.slice(0, 6);;
+  },
 };
 </script>
 
