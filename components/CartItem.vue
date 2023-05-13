@@ -21,13 +21,13 @@
     </div>
     <div class="pt-3 lg:text-2xl">
       <div class="border border-gray-300 rounded-3xl lg:p-2 flex items-center">
-        <div class="lg:mx-4 mx-2 cursor-pointer lg:p-2" @click="counterStore.deleteProduct(item)">
+        <div class="mx-4 cursor-pointer lg:p-2" @click="counterStore.deleteProduct(item)">
           -
         </div>
         <div class="text-semibold cursor-not-allowed">
           {{ item.quantity }}
         </div>
-        <div class="lg:mx-4 mx-2 cursor-pointer lg:p-2" @click="counterStore.add(item)">
+        <div class="mx-4 cursor-pointer lg:p-2" @click="counterStore.add(item)">
           +
         </div>
       </div>
