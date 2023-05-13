@@ -1,7 +1,7 @@
 <template>
-  <div class="mx-auto">
+  <div class="mx-auto my-20 lg:my-0">
     <h1 class="font-semibold text-5xl py-3 flex justify-center">Saralanganlar</h1>
-    <div class="grid lg:grid-cols-5 gap-4 mx-16 md:grid-cols-3 grid-cols-1">
+    <div class="grid lg:grid-cols-5 gap-4 lg:mx-16 mx-4 md:grid-cols-3 grid-cols-1">
       <div v-for="item in products" :key="item">
         <ProductItem :product="item" />
       </div>
