@@ -1,6 +1,6 @@
 <template>
-  <div class="container mx-auto my-10 flex justify-between">
-    <div class="max-w-[300px]">
+  <div class="lg:container lg:mx-auto block lg:flex lg:justify-between my-24 lg:my-0 text-center">
+    <div class="lg:max-w-[300px] lg:my-0 my-20">
       <h2 class="font-semibold text-2xl leading-7 my-2">Ishlab chiqaruvchi</h2>
       <p class="text-lg underline font-semibold my-4">
         ООО «SAXOVAT BROYLER» O‘zbekiston, Toshkent viloyati, Piskent tumani,
@@ -12,7 +12,7 @@
       <p class="text-lg font-normal">info@saxovat-broiler.uz</p>
     </div>
     <div>
-      <div class="max-w-[300px]">
+      <div class="lg:max-w-[300px] lg:my-0 my-20">
         <p class="text-lg font-semibold my-1">«Saxovat Broyler» ООО</p>
         <p class="text-lg font-semibold my-1">Х/R: 20208000900424594001</p>
         <p class="text-lg font-semibold my-1">INN: 303174865</p>
@@ -23,7 +23,7 @@
       </div>
     </div>
     <div>
-      <div class="max-w-[300px]">
+      <div class="lg:max-w-[300px] lg:my-0 my-20">
         <h2 class="font-semibold text-2xl leading-7 my-2">Kontaktlar</h2>
         <p class="text-lg font-normal">Telefon raqami :</p>
         <p class="text-lg font-normal">+998 (99) 999 99 99</p>
