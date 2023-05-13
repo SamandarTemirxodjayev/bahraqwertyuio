@@ -1,23 +1,23 @@
 <template>
-  <div class="bg-gray-300 py-[0.3%] h-full">
+  <div class="bg-gray-300 py-[0.3%] h-full my-24 lg:my-0">
     <div v-if="counterStore.count.length > 0" class="container mx-auto bg-white rounded-t-3xl my-[2%] py-8 max-w-[1200px]">
-      <div class="flex items-center justify-between mx-16 pb-[2%]">
+      <div class="flex items-center justify-between lg:mx-16 mx-2 pb-[2%]">
         <NuxtLink to="/">
-          <div class="flex float-left">
+          <div>
             <img src="/backicon.png" alt="" />
           </div>
         </NuxtLink>
-        <h1 class="font-semibold text-5xl">Savatcha</h1>
+        <h1 class="font-semibold text-3xl">Savatcha</h1>
         <div></div>
       </div>
-      <div class="flex flex-col mx-16">
-        <div v-for="item in counterStore.count" :key="item.id" class="py-2">
+      <div class="flex flex-col lg:mx-16 mx-2">
+        <div v-for="item in counterStore.count" :key="item.id" class="lg:my-2 my-6">
           <CartItem :item="item" />
         </div>
       </div>
-      <div class="flex justify-end mx-16 font-medium text-2xl pt-[4%]">
+      <div class="flex justify-end lg:mx-16 mx-2 font-medium lg:text-2xl text-xl pt-[4%]">
         <div class="flex">
-          <div class="mx-5">
+          <div class="lg:mx-5 mx-2">
             Umumiy mahsulot
           </div>
           <div>
@@ -25,11 +25,11 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-end mx-16 font-bold text-3xl pt-[1%]">
+      <div class="flex justify-end lg:mx-16 mx-2 font-bold lg:text-3xl text-xl pt-[1%]">
         {{totalPrice.toLocaleString()}} so‘m
       </div>
-      <div class="flex justify-between mx-20 my-8 items-center text-2xl">
-        <div class="border border-gray-300 py-4 rounded-xl px-8">
+      <div class="lg:flex block lg:justify-between lg:mx-20 mx-2 my-8 items-center text-2xl text-center">
+        <div class="border border-gray-300 py-4 rounded-xl px-8 mb-4">
           <NuxtLink to="/products">
             <button>Sotuvni davom ettirish</button>
           </NuxtLink>

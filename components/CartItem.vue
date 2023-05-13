@@ -5,11 +5,11 @@
         <img
           :src="item.photo"
           alt=""
-          class="border border-gray-300 shadow-xl rounded-2xl h-[180px] w-[260px]"
+          class="border border-gray-300 shadow-xl rounded-2xl lg:h-[180px] lg:w-[260px]"
         />
       </div>
       <div class="flex justify-between">
-        <div class="text-3xl px-6">
+        <div class="lg:text-3xl text-xl lg:px-6 px-3">
           <div class="text-semibold">
             {{ item.name }}
           </div>
@@ -19,20 +19,20 @@
         </div>
       </div>
     </div>
-    <div class="pt-3 text-2xl">
-      <div class="border border-gray-300 rounded-3xl p-2 flex items-center">
-        <div class="mx-4 cursor-pointer p-2" @click="counterStore.deleteProduct(item)">
+    <div class="pt-3 lg:text-2xl">
+      <div class="border border-gray-300 rounded-3xl lg:p-2 flex items-center">
+        <div class="lg:mx-4 mx-2 cursor-pointer lg:p-2" @click="counterStore.deleteProduct(item)">
           -
         </div>
         <div class="text-semibold cursor-not-allowed">
           {{ item.quantity }}
         </div>
-        <div class="mx-4 cursor-pointer p-2" @click="counterStore.add(item)">
+        <div class="lg:mx-4 mx-2 cursor-pointer lg:p-2" @click="counterStore.add(item)">
           +
         </div>
       </div>
       <div class="float-right pt-2 pr-2 cursor-pointer" @click="counterStore.reset(item)">
-        <img src="/trash.png" alt="" class="h-9 w-8">
+        <img src="/trash.png" alt="" class="lg:h-9 lg:w-8 h-6 w-5">
       </div>
     </div>
   </div>
