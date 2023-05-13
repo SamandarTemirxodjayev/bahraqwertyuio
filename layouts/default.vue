@@ -18,11 +18,6 @@
           <li class="mx-4">
             <NuxtLink to="/contact"><span>Aloqa</span></NuxtLink>
           </li>
-          <li class="mx-4">
-            <NuxtLink to="/cart">
-              <span class="mr-2">Savatcha({{ totalQuantity }})</span>
-            </NuxtLink>
-          </li>
         </ul>
       </div>
       <div class="flex flex-row text-center ">
@@ -31,7 +26,7 @@
             <NuxtLink to="/loved"><img src="/like.png" alt="" /></NuxtLink>
           </li>
           <li class="mx-2">
-            <NuxtLink to="/cart"><img src="/bag.png" alt="" /></NuxtLink>
+            <BagItem />
           </li>
         </ul>
       </div>
@@ -72,13 +67,3 @@
     </div>
   </div>
 </template>
-<script setup>
-import { useCounterStore } from "~/store";
-
-const counterStore = useCounterStore();
-const totalQuantity = computed(() => {
-  return counterStore.count.reduce((total, product) => {
-    return total + product.quantity
-  }, 0)
-})
-</script>
