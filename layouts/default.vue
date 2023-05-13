@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="mx-4 my-2 lg:flex flex-row justify-between items-center text-2xl hidden"
+      class="mx-4 my-2 md:hidden lg:flex flex-row justify-between items-center text-2xl hidden"
     >
       <div>
         <NuxtLink to="/"><img src="/logo.png" alt="Logo" /></NuxtLink>
@@ -41,7 +41,7 @@
           <img src="/logo.png" alt="Logo" />
         </NuxtLink>
       </div>
-      <div class="flex flex-row text-center md:hidden">
+      <div class="flex flex-row text-center lg:hidden">
         <button @click="hamburger">
           <div v-if="!hamburgerf">
             <svg
