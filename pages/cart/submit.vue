@@ -1,23 +1,23 @@
 <template>
-  <div class="bg-gray-300 py-[0.3%] h-full">
+  <div class="bg-gray-300 py-[0.3%] h-full my-24 lg:my-0">
     <div
-      class="container mx-auto bg-white rounded-t-3xl my-[2%] py-8 max-w-[1200px]"
+      class="container mx-auto bg-white rounded-t-3xl my-[2%] py-8 lg:max-w-[1200px]"
     >
-      <div class="flex items-center justify-between mx-16 pb-[2%]">
+      <div class="flex items-center justify-between lg:mx-16 mx-2 pb-[2%]">
         <NuxtLink to="/cart">
-          <div class="flex float-left">
+          <div>
             <img src="/backicon.png" alt="" />
           </div>
         </NuxtLink>
-        <h1 class="font-semibold text-5xl">Savatcha</h1>
+        <h1 class="font-semibold lg:text-5xl text-3xl">Savatcha</h1>
         <div></div>
       </div>
-      <div class="flex justify-center mt-[4%] mx-24">
-        <form class="flex flex-col" @submit="handleSubmit">
+      <div class="flex justify-center mt-[4%] lg:mx-24">
+        <form class="flex flex-col max-w-[90%]" @submit="handleSubmit">
           <input
             type="text"
             placeholder="Ismingiz"
-            class="text-2xl border py-3 px-10 rounded-3xl mb-[10%]"
+            class="text-2xl border py-3 px-10  rounded-3xl mb-[10%]"
             :class="{ 'border-lime-700': name, 'border-red-500': !name }"
             v-model="name"
           />
