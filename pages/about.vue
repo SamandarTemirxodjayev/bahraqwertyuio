@@ -1,11 +1,11 @@
 <template>
-  <div class="container mx-auto w-full flex flex-col items-center justify-center">
+  <div class="container mx-auto w-full flex flex-col items-center justify-center my-20 lg:my-0">
     <div class="w-full">
       <img src="/logo2.png" alt="" class="mx-auto" />
     </div>
-    <h1 class="font-semibold text-5xl mt-[2%]">Kompaniyamiz haqida</h1>
+    <h1 class="font-semibold text-5xl mt-[2%] text-center">Kompaniyamiz haqida</h1>
     <div class="flex items-center justify-center mx-auto mt-[2%]">
-      <div class="flex w-[30%] font-normal text-2xl">
+      <div class="flex lg:w-[30%] font-normal text-2xl">
         <p class="leading-6">
           "Bahra Chickens" bu barra tovuq go'shtlari va yarim tayyor
           mahsulotlarini ishlab chiqaruvchi kompaniyadir. Ushbu kompaniya
@@ -18,29 +18,29 @@
           nazoratidadir.
         </p>
       </div>
-      <div class="mx-[5%]">
+      <div class="mx-[5%] hidden lg:block">
         <img src="/aboutgroup.png" alt="" />
       </div>
     </div>
     <h1 class="font-semibold text-5xl mt-[6%]">Bizning shiorimiz</h1>
-    <div class="flex justify-between my-[4%]">
-      <div class="max-w-[189px] -mx-[40%]">
+    <div class="lg:flex justify-between my-[4%]">
+      <div class="max-w-[189px] lg:-mx-[40%] lg:my-0 my-10">
         <h1 class="font-medium text-4xl mb-2">Halollik</h1>
-        <p class="text-lg">
+        <p class="text-lg leading-5 lg:leading-8">
           Biz bilan birga hamkorlik qiluvchi va kompaniyaga bevosita bog‘liq
           insonlar oldida halol bo‘lish juda ham muhim.
         </p>
       </div>
-      <div class="max-w-[189px] -mx-[40%]">
+      <div class="max-w-[189px] lg:-mx-[40%] lg:my-0 my-10">
         <h1 class="font-medium text-4xl mb-2">Tozalik</h1>
-        <p class="text-lg">
+        <p class="text-lg leading-5 lg:leading-8">
           Har bir mahsulot va uni ishlab chiqarish, yetkazib berishda tozalikka
           qat’iy amal qilinadi.
         </p>
       </div>
-      <div class="max-w-[189px] -mx-[40%]">
+      <div class="max-w-[189px] lg:-mx-[40%] lg:my-0 my-10">
         <h1 class="font-medium text-4xl mb-2">Ishonchlilik</h1>
-        <p class="text-lg">
+        <p class="text-lg leading-5 lg:leading-8">
           Bizga ishonishingiz uchun yuqori sifatda va hamyonbop narxda mahsulot
           yetkazib berishga harakat qilamiz.
         </p>
