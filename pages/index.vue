@@ -63,7 +63,7 @@
       </NuxtLink>
     </section>
     <section>
-      <h1 class="flex justify-center font-semibold text-5xl pt-[4%]">
+      <h1 class="flex text-center mx-16 font-semibold text-5xl pt-[4%]">
         Bizning hamkorlar
       </h1>
       <div class="flex items-center justify-between mt-[5%]">
@@ -81,7 +81,7 @@
         </div>
       </div>
     </section>
-    <section class="my-[20%] mx-[20%]">
+    <section class="my-[20%] mx-[20%] hidden lg:inline-block">
       <div class="flex items-center">
         <div>
           <img src="/callcenterimg.png" alt="" />
