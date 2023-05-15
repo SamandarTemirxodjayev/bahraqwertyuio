@@ -1,20 +1,21 @@
 <template>
-  <div class="container mx-auto my-[3%]">
-    <section class="justify-between flex">
-      <div class="text-8xl font-semibold">
-        <p class="my-6">Tovuq</p>
-        <div class="text-animation" style="color: #f9e01a">
+  <div class="container mx-auto lg:mt-0 my-24">
+    <section class="lg:justify-between justify-center text-center items-center lg:text-start flex">
+      <div class="font-semibold">
+        <p class="lg:text-8xl text-4xl ">Tovuq</p>
+        <div class="text-animation lg:text-8xl text-4xl" style="color: #f9e01a">
           <span class="old-text" :key="currentIndex">{{ oldText }}</span>
           <span class="new-text">{{ newText }}</span>
         </div>
-        <p class="my-6">bizdan oling</p>
+        <p class="my-6 lg:text-8xl text-4xl">bizdan oling</p>
+        <NuxtLink to="/products" class="NuxtlinkButton z-0 top-20 hidden lg:inline-block" style="--clr:#F9E01A"><span class="text-xl">Mahsulotlar</span><i></i></NuxtLink>
       </div>
-      <div class="items-center py-[6%] px-[95px]">
+      <div class="items-center  px-[95px] hidden lg:block">
         <img src="/main.png" alt="" />
       </div>
     </section>
     <section
-      class="bg-no-repeat min-h-[810px] mt-[5%]"
+      class="bg-no-repeat min-h-[810px]"
       style="background-image: url('/section2.png')"
     >
       <h1 class="ml-[20%] font-semibold text-5xl pt-[4%]">
@@ -188,9 +189,80 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+.NuxtlinkButton{
+  position: relative;
+  background: #000;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+.NuxtlinkButton:hover{
+  letter-spacing: 0.25em;
+  background: var(--clr);
+  box-shadow: 0 0 35px var(--clr);
+  color: var(--clr);
+}
+.NuxtlinkButton::before{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #fff;
+}
+.NuxtlinkButton span{
+  position: relative;
+  z-index: 1;
+}
+.NuxtlinkButton i{
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.NuxtlinkButton i::before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  left: 80%;
+  top: -3.5px;
+  transform: translateX(-50%);
+  border: 2px solid #000;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.NuxtlinkButton:hover i::before{
+  width: 40px;
+  left: 20%;
+  border: 2px solid var(--clr);
+}
+.NuxtlinkButton i::after{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  left: 20%;
+  transform: translateX(-50%);
+  bottom: -3.5px;
+  border: 2px solid #000;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.NuxtlinkButton:hover i::after{
+  width: 40px;
+  left: 80%;
+  border: 2px solid var(--clr);
+}
 .text-animation {
   position: relative;
   height: 1em;
+  z-index: 0;
 }
 
 .old-text {

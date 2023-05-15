@@ -1,9 +1,9 @@
 <template>
   <div class="relative">
-    <div class="absolute bg-red-500 text-white h-5 w-5 rounded-full -right-1 -top-1 text-sm">
+    <div class="absolute bg-red-500 text-center text-white h-5 w-5 rounded-full -right-1 -top-1 text-sm">
       {{totalQuantity}}
     </div>
-    <NuxtLink to="/cart"><img src="/bag.png" alt="" /></NuxtLink>
+    <NuxtLink to="/cart"><img src="/bag.png" alt="" class="" /></NuxtLink>
   </div>
 </template>
 <script setup>

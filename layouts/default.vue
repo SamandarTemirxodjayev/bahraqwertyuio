@@ -4,7 +4,9 @@
       class="mx-4 my-2 md:hidden lg:flex flex-row justify-between items-center text-2xl hidden"
     >
       <div>
-        <NuxtLink to="/"><img src="/logo.png" alt="Logo" /></NuxtLink>
+        <NuxtLink to="/"
+          ><img src="/logo.png" alt="Logo" class="rounded-3xl"
+        /></NuxtLink>
       </div>
       <div>
         <ul class="flex flex-row">
@@ -35,19 +37,17 @@
     </div>
     <div
       class="fixed bg-white w-full p-2 flex flex-row justify-between items-center text-2xl lg:hidden"
+      style="background: #f9e01a"
     >
-      <div>
-        <NuxtLink to="/">
-          <img src="/logo.png" alt="Logo" />
-        </NuxtLink>
-      </div>
       <div class="flex flex-row text-center lg:hidden">
         <button @click="hamburger">
           <div v-if="!hamburgerf">
             <svg
               viewBox="0 0 20 20"
               fill="currentColor"
-              class="menu-icon w-6 h-6"
+              class="menu-icon"
+              width="30"
+              height="30"
             >
               <path
                 fill-rule="evenodd"
@@ -56,55 +56,73 @@
               ></path>
             </svg>
           </div>
-          <div v-else>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="30"
-              height="30"
-              viewBox="0 0 30 30"
-            >
-              <path
-                d="M 7 4 C 6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688 L 4.2929688 6.2929688 C 3.9019687 6.6839688 3.9019687 7.3170313 4.2929688 7.7070312 L 11.585938 15 L 4.2929688 22.292969 C 3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031 L 6.2929688 25.707031 C 6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.682969 26.098031 23.317031 26.098031 23.707031 25.707031 L 25.707031 23.707031 C 26.098031 23.316031 26.098031 22.682969 25.707031 22.292969 L 18.414062 15 L 25.707031 7.7070312 C 26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688 L 23.707031 4.2929688 C 23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688 L 15 11.585938 L 7.7070312 4.2929688 C 7.5115312 4.0974687 7.255875 4 7 4 z"
-              ></path>
-            </svg>
-          </div>
         </button>
       </div>
-      <div class="flex flex-row text-center">
-        <ul class="flex flex-row items-center">
-          <li class="mx-2">
-            <NuxtLink to="/loved">
-              <img src="/like.png" alt="" />
-            </NuxtLink>
-          </li>
-          <li class="mx-2">
-            <BagItem />
-          </li>
-        </ul>
+      <div>
+        <NuxtLink to="/">
+          <img src="/logo.png" alt="Logo" />
+        </NuxtLink>
+      </div>
+      <div class="flex flex-row">
+        <NuxtLink to="/loved">
+          <img src="/like.png" alt="" />
+        </NuxtLink>
       </div>
     </div>
-    <div v-if="hamburgerf" class="fixed bg-white w-full top-20">
-      <ul class="flex flex-col" @click="hamburger">
-        <li class="text-3xl my-2 text-center">
-          <NuxtLink to="/">
-            <span>Asosiy</span>
+    <div v-if="hamburgerf" class="fixed z-10 side-bar">
+      <div class="close-btn" @click="hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+        >
+          <path
+            d="M 7 4 C 6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688 L 4.2929688 6.2929688 C 3.9019687 6.6839688 3.9019687 7.3170313 4.2929688 7.7070312 L 11.585938 15 L 4.2929688 22.292969 C 3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031 L 6.2929688 25.707031 C 6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.682969 26.098031 23.317031 26.098031 23.707031 25.707031 L 25.707031 23.707031 C 26.098031 23.316031 26.098031 22.682969 25.707031 22.292969 L 18.414062 15 L 25.707031 7.7070312 C 26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688 L 23.707031 4.2929688 C 23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688 L 15 11.585938 L 7.7070312 4.2929688 C 7.5115312 4.0974687 7.255875 4 7 4 z"
+          ></path>
+        </svg>
+      </div>
+      <ul class="flex flex-col text-xl" @click="hamburger">
+        <li class="my-2">
+          <NuxtLink to="/" class="NuxtLinkButton hover:rounded-2xl flex">
+            <div class="flex items-center">
+              <img src="/sidebar/index.png" alt="" class="mr-5">
+              <span>Asosiy</span>
+            </div>
           </NuxtLink>
         </li>
-        <li class="text-3xl my-2 text-center">
-          <NuxtLink to="/about">
-            <span>Haqida</span>
+        <li class="my-2">
+          <NuxtLink to="/about" class="NuxtLinkButton hover:rounded-2xl">
+            <div class="flex items-center">
+              <img src="/sidebar/about.png" alt="" class="mr-5">
+              <span>Haqida</span>
+            </div>
           </NuxtLink>
         </li>
-        <li class="text-3xl my-2 text-center">
-          <NuxtLink to="/products">
-            <span>Mahsulotlar</span>
+        <li class="my-2">
+          <NuxtLink to="/products" class="NuxtLinkButton hover:rounded-2xl">
+            <div class="flex items-center">
+              <img src="/sidebar/products.png" alt="" class="mr-5">
+              <span>Mahsulotlar</span>
+            </div>
           </NuxtLink>
         </li>
-        <li class="text-3xl my-2 text-center">
-          <NuxtLink to="/contact">
-            <span>Aloqa</span>
+        <li class="my-2">
+          <NuxtLink to="/contact" class="NuxtLinkButton hover:rounded-2xl">
+            <div class="flex items-center">
+              <img src="/sidebar/contacts.png" alt="" class="mr-5">
+              <span>Aloqa</span>
+            </div>
+          </NuxtLink>
+        </li>
+        <li class="my-2">
+          <NuxtLink to="/cart" class="NuxtLinkButton hover:rounded-2xl">
+            <div class="flex items-center">
+              <img src="/sidebar/cart.png" alt="" class="mr-5">
+              <span>Savatcha</span>
+            </div>
           </NuxtLink>
         </li>
       </ul>
@@ -158,6 +176,11 @@
         <span>Barcha huquqlar himoyalangan.</span>
       </div>
     </div>
+    <div class="lg:hidden">
+      <div class="fixed bottom-5 right-5">
+        <BagItem />
+      </div>
+    </div>
   </div>
 </template>
 <script setup>
@@ -168,3 +191,38 @@ const hamburger = () => {
   hamburgerf.value = !hamburgerf.value;
 };
 </script>
+<style>
+.side-bar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  width: 290px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+.side-bar ul {
+  width: 100%;
+  margin-top: 80px;
+}
+.side-bar ul li {
+  position: relative;
+  cursor: pointer;
+}
+.side-bar ul li .NuxtLinkButton {
+  display: block;
+  padding: 3px 15px;
+  line-height: 60px;
+}
+.side-bar ul li .NuxtLinkButton:hover {
+  background: #f9e01a;
+  transition: 0.3s ease;
+}
+.close-btn{
+  position: absolute;
+  right: 0;
+  margin: 25px;
+  cursor: pointer;
+}
+</style>
