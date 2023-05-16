@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 my-4 bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+  <NuxtLink to="/products" class="p-4 my-4 bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
     <img :src="product.photo" alt="Product image" class="mx-auto block min-h-[130px]" />
     <div class="lg:p-4 p-2">
       <h2 class="lg:text-lg text-sm font-light my-2">
@@ -8,7 +8,7 @@
 
       <p class="text-gray-700 font-bold lg:text-xl text-sm">{{ product.price }}</p>
     </div>
-    <div @click="handle">
+    <div @click="handle" class="lg:inline-block hidden">
     <button
       v-if="!handleclick"
       @click="add(product)"
@@ -24,7 +24,7 @@
       <div>Qo'shildi</div>
     </button>
     </div>
-  </div>
+  </NuxtLink>
 </template>
 
 <script setup>
