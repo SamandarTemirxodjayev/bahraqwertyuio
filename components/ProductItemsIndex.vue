@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink to="/products" class="p-4 my-4 bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+  <NuxtLink to="/products" class="p-4 my-4 bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col">
     <img :src="product.photo" alt="Product image" class="mx-auto block min-h-[130px]" />
     <div class="lg:p-4 p-2">
       <h2 class="lg:text-lg text-sm font-light my-2">

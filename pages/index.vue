@@ -65,7 +65,7 @@
         </div>
       </div>
     </section>
-    <section class="mb-[10%]">
+    <section class="mb-[10%] mx-2">
       <h1
         class="flex justify-center font-semibold lg:text-5xl text-3xl pt-[4%]"
       >
@@ -107,16 +107,16 @@
       </div>
     </section>
     <hr class="lg:hidden bg-black mt-12 p-0.5">
-    <section class="lg:my-[20%] mx-[10%] py-[10%] lg:mx-[20%]">
-      <div class="flex items-center">
-        <div class="hidden lg:block">
+    <section class="lg:my-[5%] py-[10%] lg:mx-[20%]">
+      <div class="flex items-center justify-center mx-[10%] lg:mx-0">
+        <div class="hidden lg:inline-block">
           <img src="/callcenterimg.png" alt="" />
         </div>
-        <div class="lg:p-10 lg:border lg:border-gray-300 lg:rounded-r-3xl">
-          <h1 class="lg:text-2xl text-xl font-semibold mb-10">
+        <div class="lg:border lg:border-gray-300 lg:rounded-r-3xl lg:min-h-[480px] lg:px-5">
+          <h1 class="lg:pt-10 lg:text-2xl text-xl font-semibold mb-10 text-center">
             Sizga yordam bera olamizmi ?
           </h1>
-          <p class="max-w-[400px] text-sm">
+          <p class="lg:px-10 lg:max-w-[400px] text-sm">
             Siz istagan barcha savollaringizga bizda albatta javob bor. Agar
             yuqorida yetarlicha ma’lumot yo‘q bo‘lsa, unda telefon raqamingizni
             yozib qoldiring. Biz siz bilan albatta bog‘lanamiz
