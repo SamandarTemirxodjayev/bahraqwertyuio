@@ -1,5 +1,6 @@
 <template>
   <div>
+    <LoadSpinner v-if="showHideSpinner" />
     <div
       class="mx-4 my-2 md:hidden lg:flex flex-row justify-between items-center text-2xl hidden"
     >
@@ -10,16 +11,16 @@
       </div>
       <div>
         <ul class="flex flex-row">
-          <li class="mx-4">
+          <li class="mx-8">
             <NuxtLink to="/"><span>Asosiy</span></NuxtLink>
           </li>
-          <li class="mx-4">
+          <li class="mx-8">
             <NuxtLink to="/about"><span>Haqida</span></NuxtLink>
           </li>
-          <li class="mx-4">
+          <li class="mx-8">
             <NuxtLink to="/products"><span>Mahsulotlar</span></NuxtLink>
           </li>
-          <li class="mx-4">
+          <li class="mx-8">
             <NuxtLink to="/contact"><span>Aloqa</span></NuxtLink>
           </li>
         </ul>
@@ -85,42 +86,42 @@
         </svg>
       </div>
       <ul class="flex flex-col text-xl" @click="hamburger">
-        <li class="my-2">
+        <li>
           <NuxtLink to="/" class="NuxtLinkButton hover:rounded-2xl flex">
             <div class="flex items-center">
-              <img src="/sidebar/index.png" alt="" class="mr-5">
+              <img src="/sidebar/index.svg" alt="" class="mr-5">
               <span>Asosiy</span>
             </div>
           </NuxtLink>
         </li>
-        <li class="my-2">
+        <li>
           <NuxtLink to="/about" class="NuxtLinkButton hover:rounded-2xl">
             <div class="flex items-center">
-              <img src="/sidebar/about.png" alt="" class="mr-5">
+              <img src="/sidebar/about.svg" alt="" class="mr-5">
               <span>Haqida</span>
             </div>
           </NuxtLink>
         </li>
-        <li class="my-2">
+        <li>
           <NuxtLink to="/products" class="NuxtLinkButton hover:rounded-2xl">
             <div class="flex items-center">
-              <img src="/sidebar/products.png" alt="" class="mr-5">
+              <img src="/sidebar/products.svg" alt="" class="mr-5">
               <span>Mahsulotlar</span>
             </div>
           </NuxtLink>
         </li>
-        <li class="my-2">
+        <li>
           <NuxtLink to="/contact" class="NuxtLinkButton hover:rounded-2xl">
             <div class="flex items-center">
-              <img src="/sidebar/contacts.png" alt="" class="mr-5">
+              <img src="/sidebar/contacts.svg" alt="" class="mr-5">
               <span>Aloqa</span>
             </div>
           </NuxtLink>
         </li>
-        <li class="my-2">
+        <li>
           <NuxtLink to="/cart" class="NuxtLinkButton hover:rounded-2xl">
             <div class="flex items-center">
-              <img src="/sidebar/cart.png" alt="" class="mr-5">
+              <img src="/sidebar/cart.svg" alt="" class="mr-5">
               <span>Savatcha</span>
             </div>
           </NuxtLink>
@@ -226,3 +227,18 @@ const hamburger = () => {
   cursor: pointer;
 }
 </style>
+<script>
+export default {
+  beforeCreate() {
+    this.showHideSpinner = true;
+  },
+  mounted() {
+    this.showHideSpinner = false;
+  },
+  data() {
+    return {
+      showHideSpinner: true
+    };
+  }
+};
+</script>

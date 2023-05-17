@@ -6,7 +6,7 @@
     <h1 class="font-semibold lg:text-5xl text-2xl my-[5%] lg:my-[2%] text-center">Kompaniyamiz haqida</h1>
     <div class="flex flex-col lg:flex-row items-center justify-center mx-auto lg:mt-[2%]">
       <div class="flex lg:w-[30%] lg:font-normal font-semibold lg:text-2xl text-lg lg:mx-0 mx-[2%]">
-        <p class="leading-6">
+        <p class="leading-8">
           "Bahra Chickens" bu barra tovuq go'shtlari va yarim tayyor
           mahsulotlarini ishlab chiqaruvchi kompaniyadir. Ushbu kompaniya
           2018-yil tashkil topgan. “Bahra Chickens” korxonasi sizning savdo
