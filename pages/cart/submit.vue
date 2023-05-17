@@ -6,7 +6,7 @@
       <div class="flex items-center justify-between lg:mx-16 mx-2 pb-[2%]">
         <NuxtLink to="/cart">
           <div>
-            <img src="/backicon.png" alt="" />
+            <img src="/backicon.svg" alt="" />
           </div>
         </NuxtLink>
         <h1 class="font-semibold lg:text-5xl text-3xl">Savatcha</h1>

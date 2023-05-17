@@ -28,7 +28,7 @@
       <div class="flex flex-row text-center">
         <ul class="flex flex-row items-center">
           <li class="mx-2">
-            <NuxtLink to="/loved"><img src="/like.png" alt="" /></NuxtLink>
+            <NuxtLink to="/loved"><img src="/like.svg" alt="" /></NuxtLink>
           </li>
           <li class="mx-2">
             <BagItem />
@@ -66,7 +66,7 @@
       </div>
       <div class="flex flex-row">
         <NuxtLink to="/loved">
-          <img src="/like.png" alt="" />
+          <img src="/like.svg" alt="" height="35" width="35" />
         </NuxtLink>
       </div>
     </div>

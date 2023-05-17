@@ -1,15 +1,17 @@
 <template>
-  <div class="flex justify-between">
+  <div class="justify-between flex">
     <div class="flex">
       <div>
         <img
           :src="item.photo"
           alt=""
           class="border border-gray-300 shadow-xl rounded-2xl lg:h-[180px] lg:w-[260px]"
+          height="100"
+          width="120"
         />
       </div>
       <div class="flex justify-between">
-        <div class="lg:text-3xl text-xl lg:px-6 px-3">
+        <div class="lg:text-3xl text-sm lg:px-6 px-3">
           <div class="text-semibold">
             {{ item.name }}
           </div>
