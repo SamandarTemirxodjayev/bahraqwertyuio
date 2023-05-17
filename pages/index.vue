@@ -81,7 +81,7 @@
           class="float-right bg-yellow-300 lg:text-3xl text-sm lg:py-3 py-2 lg:px-10 px-4 rounded-3xl font-semibold flex items-center"
         >
           <div>Barchasini ko‘rish</div>
-          <img src="/back.png" alt="" class="ml-4" />
+          <img src="/back.svg" alt="" class="ml-4" />
         </button>
       </NuxtLink>
     </section>
@@ -93,16 +93,16 @@
       </h1>
       <div class="flex items-center justify-between mt-[5%]">
         <div>
-          <img src="/korzinka.png" alt="" />
+          <img src="/korzinka.svg" alt="" />
         </div>
         <div>
-          <img src="/havas.png" alt="" />
+          <img src="/havas.svg" alt="" />
         </div>
         <div>
-          <img src="/qanotchi.png" alt="" />
+          <img src="/qanotchi.svg" alt="" />
         </div>
         <div>
-          <img src="/magnum.png" alt="" />
+          <img src="/magnum.svg" alt="" />
         </div>
       </div>
     </section>
@@ -138,7 +138,7 @@
               class="bg-yellow-300 text-lg py-3 px-10 rounded-3xl font-semibold flex items-center justify-center"
             >
               <div>Yuborish</div>
-              <img src="/back.png" alt="" class="ml-4" />
+              <img src="/back.svg" alt="" class="ml-4" />
             </button>
           </form>
         </div>

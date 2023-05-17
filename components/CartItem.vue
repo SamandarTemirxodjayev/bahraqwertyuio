@@ -34,7 +34,7 @@
         </div>
       </div>
       <div class="float-right pt-2 pr-2 cursor-pointer" @click="counterStore.reset(item)">
-        <img src="/trash.png" alt="" class="lg:h-9 lg:w-8 h-6 w-5">
+        <img src="/trash.svg" alt="" class="lg:h-9 lg:w-8 h-6 w-5">
       </div>
     </div>
   </div>

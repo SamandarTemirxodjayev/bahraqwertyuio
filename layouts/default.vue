@@ -28,7 +28,7 @@
       <div class="flex flex-row text-center">
         <ul class="flex flex-row items-center">
           <li class="mx-2">
-            <NuxtLink to="/loved"><img src="/like.svg" alt="" /></NuxtLink>
+            <NuxtLink to="/loved"><img src="/like.svg" alt="" height="40" width="40" /></NuxtLink>
           </li>
           <li class="mx-2">
             <BagItem />
@@ -133,7 +133,7 @@
     <div class="mx-auto hidden lg:block" style="background-color: #f9e01a">
       <div class="mx-10 mr-32 flex flex-row justify-between items-center">
         <div>
-          <img src="/footerlogo.png" alt="" />
+          <img src="/footerlogo.svg" alt="" />
         </div>
         <div class="flex flex-col">
           <h2 class="text-2xl font-medium">Mahsulotlar</h2>
@@ -156,20 +156,20 @@
         <div class="flex flex-col">
           <div class="flex-row flex">
             <NuxtLink to="/"
-              ><img src="/telegram.png" alt="" class="mx-2 cursor-pointer"
+              ><img src="/telegram.svg" alt="" class="mx-2 cursor-pointer"
             /></NuxtLink>
             <NuxtLink to="/"
-              ><img src="/instagram.png" alt="" class="mx-2 cursor-pointer"
+              ><img src="/instagram.svg" alt="" class="mx-2 cursor-pointer"
             /></NuxtLink>
             <NuxtLink to="/"
-              ><img src="/facebook.png" alt="" class="mx-2 cursor-pointer"
+              ><img src="/facebook.svg" alt="" class="mx-2 cursor-pointer"
             /></NuxtLink>
           </div>
           <div class="mt-1 font-semibold">+998 (90) 000 00 00</div>
           <div class="font-semibold">Call center</div>
         </div>
       </div>
-      <img src="/line.png" alt="" class="mx-auto py-10 object-cover" />
+      <img src="/line.svg" alt="" class="mx-auto py-10 object-cover" />
       <div
         class="text-center items-center justify-between mx-32 flex font-semibold"
       >

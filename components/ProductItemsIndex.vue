@@ -15,7 +15,7 @@
       class="bg-yellow-300 lg:font-bold font-semibold p-3 rounded-2xl w-full my-2 flex items-center justify-center"
     >
       <div>Savatcha</div>
-      <img src="/cart.png" alt="" class="ml-2" />
+      <img src="/mobile/cart.svg" alt="" class="ml-2" />
     </button>
     <button
       v-else
