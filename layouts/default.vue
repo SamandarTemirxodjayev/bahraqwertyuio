@@ -5,7 +5,7 @@
     >
       <div>
         <NuxtLink to="/"
-          ><img src="/logo.svg" alt="Logo" class="rounded-3xl"
+          ><img src="/logo.svg" alt="Logo" class="rounded-3xl h-[74px] w-[148px]"
         /></NuxtLink>
       </div>
       <div>
@@ -36,7 +36,7 @@
       </div>
     </div>
     <div
-      class="fixed bg-white w-full p-2 flex flex-row justify-between items-center text-2xl lg:hidden"
+      class="fixed bg-white w-full px-5 flex flex-row justify-between items-center text-2xl lg:hidden"
       style="background: #f9e01a"
     >
       <div class="flex flex-row text-center lg:hidden">
