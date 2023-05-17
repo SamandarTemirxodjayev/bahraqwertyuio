@@ -9,7 +9,7 @@
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 .page-enter-from,
 .page-leave-to {
@@ -18,11 +18,11 @@
 }
 .rotate-enter-active,
 .rotate-leave-active {
-  transition: all 0.4s;
+  transition: all 0.2s;
 }
 .rotate-enter-from,
 .rotate-leave-to {
   opacity: 0;
-  transform: rotate3d(1, 1, 3, 60deg);
+  transform: rotate3d(1, 1, 3, 18deg);
 }
 </style>

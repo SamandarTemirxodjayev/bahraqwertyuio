@@ -71,7 +71,9 @@
       </div>
     </div>
     <div v-if="hamburgerf" class="fixed z-10 side-bar">
-      <div class="close-btn" @click="hamburger">
+      <div class="close-btn flex items-center font-semibold" @click="hamburger">
+        <img src="/chicken.svg" alt="" class="">
+        <div class="mx-3">BAHRA CHICKEN MEAT</div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
@@ -85,20 +87,13 @@
           ></path>
         </svg>
       </div>
-      <ul class="flex flex-col text-xl" @click="hamburger">
+      <ul class="flex flex-col text-xl font-semibold" @click="hamburger">
+        <hr class="bg-black my-4">
         <li>
           <NuxtLink to="/" class="NuxtLinkButton hover:rounded-2xl flex">
             <div class="flex items-center">
               <img src="/sidebar/index.svg" alt="" class="mr-5">
               <span>Asosiy</span>
-            </div>
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/about" class="NuxtLinkButton hover:rounded-2xl">
-            <div class="flex items-center">
-              <img src="/sidebar/about.svg" alt="" class="mr-5">
-              <span>Haqida</span>
             </div>
           </NuxtLink>
         </li>
@@ -115,6 +110,14 @@
             <div class="flex items-center">
               <img src="/sidebar/contacts.svg" alt="" class="mr-5">
               <span>Aloqa</span>
+            </div>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/about" class="NuxtLinkButton hover:rounded-2xl">
+            <div class="flex items-center">
+              <img src="/sidebar/about.svg" alt="" class="mr-5">
+              <span>Biz haqimizda</span>
             </div>
           </NuxtLink>
         </li>
@@ -195,7 +198,6 @@ const hamburger = () => {
 <style>
 .side-bar {
   background: rgba(255, 255, 255);
-  backdrop-filter: blur(15px);
   width: 290px;
   height: 100vh;
   position: fixed;
@@ -205,7 +207,7 @@ const hamburger = () => {
 }
 .side-bar ul {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 .side-bar ul li {
   position: relative;
@@ -214,7 +216,7 @@ const hamburger = () => {
 .side-bar ul li .NuxtLinkButton {
   display: block;
   padding: 3px 15px;
-  line-height: 60px;
+  line-height: 40px;
 }
 .side-bar ul li .NuxtLinkButton:hover {
   background: #f9e01a;
@@ -222,8 +224,9 @@ const hamburger = () => {
 }
 .close-btn{
   position: absolute;
-  right: 0;
-  margin: 25px;
+  left: 0;
+  margin-left: 15px;
+  margin-top: 25px;
   cursor: pointer;
 }
 </style>
