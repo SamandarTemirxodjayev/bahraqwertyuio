@@ -21,7 +21,7 @@
         <img src="/main.png" alt="" />
       </div>
       <div class="flex lg:hidden justify-center items-center">
-        <img src="/mobile/main.png" alt="" />
+        <img src="/mobile/main.svg" alt="" />
       </div>
     </section>
     <section

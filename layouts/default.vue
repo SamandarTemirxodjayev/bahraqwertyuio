@@ -5,7 +5,7 @@
     >
       <div>
         <NuxtLink to="/"
-          ><img src="/logo.png" alt="Logo" class="rounded-3xl"
+          ><img src="/logo.svg" alt="Logo" class="rounded-3xl"
         /></NuxtLink>
       </div>
       <div>
@@ -60,7 +60,7 @@
       </div>
       <div>
         <NuxtLink to="/">
-          <img src="/logo.png" alt="Logo" />
+          <img src="/logo.svg" alt="Logo" />
         </NuxtLink>
       </div>
       <div class="flex flex-row">
@@ -193,7 +193,7 @@ const hamburger = () => {
 </script>
 <style>
 .side-bar {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255);
   backdrop-filter: blur(15px);
   width: 290px;
   height: 100vh;
