@@ -1,0 +1,122 @@
+[
+  {
+    "id": 41,
+    "name": "Tovuq soni 3",
+    "price": "30.500 so‘m",
+    "photo": "/products/son1.png"
+  },
+  {
+    "id": 42,
+    "name": "Tovuq boldiri",
+    "price": "27.500 so‘m",
+    "photo": "/products/boldir1.png"
+  },
+  {
+    "id": 43,
+    "name": "Suyaksiz son",
+    "price": "37.500 so‘m",
+    "photo": "/products/suyaksizson1-1.png"
+  },
+  {
+    "id": 44,
+    "name": "Tovuq bedrosi (terisiz)",
+    "price": "38.000 so‘m",
+    "photo": "/products/bedro suyak va terisiz 1.png"
+  },
+  {
+    "id": 45,
+    "name": "Terili file",
+    "price": "34.500 so‘m",
+    "photo": "/products/terilifile1.png"
+  },
+  {
+    "id": 46,
+    "name": "Tovuq qanotchalari",
+    "price": "29.000 so‘m",
+    "photo": "/products/qanotchalar 1.png"
+  },
+  {
+    "id": 47,
+    "name": "Tovuq qiymasi",
+    "price": "13.000 so‘m",
+    "photo": "/products/farsh 1.png"
+  },
+  {
+    "id": 48,
+    "name": "Tovuq oyoqchalari",
+    "price": "26.000 so‘m",
+    "photo": "/products/oyoqchalar 1.png"
+  },
+  {
+    "id": 49,
+    "name": "Butun tovuq",
+    "price": "52.000 so‘m",
+    "photo": "/products/butun tovuq 1.png"
+  },
+  {
+    "id": 50,
+    "name": "Terisiz file",
+    "price": "34.500 so‘m",
+    "photo": "/products/file 1.png"
+  },
+  {
+    "id": 51,
+    "name": "Tovuq soni",
+    "price": "30.500 so‘m",
+    "photo": "/products/son1.png"
+  },
+  {
+    "id": 52,
+    "name": "Tovuq boldiri",
+    "price": "27.500 so‘m",
+    "photo": "/products/boldir1.png"
+  },
+  {
+    "id": 53,
+    "name": "Suyaksiz son",
+    "price": "37.500 so‘m",
+    "photo": "/products/suyaksizson1-1.png"
+  },
+  {
+    "id": 54,
+    "name": "Tovuq bedrosi (terisiz)",
+    "price": "38.000 so‘m",
+    "photo": "/products/bedro suyak va terisiz 1.png"
+  },
+  {
+    "id": 55,
+    "name": "Terili file",
+    "price": "34.500 so‘m",
+    "photo": "/products/terilifile1.png"
+  },
+  {
+    "id": 56,
+    "name": "Tovuq qanotchalari",
+    "price": "29.000 so‘m",
+    "photo": "/products/qanotchalar 1.png"
+  },
+  {
+    "id": 57,
+    "name": "Tovuq qiymasi",
+    "price": "13.000 so‘m",
+    "photo": "/products/farsh 1.png"
+  },
+  {
+    "id": 58,
+    "name": "Tovuq oyoqchalari",
+    "price": "26.000 so‘m",
+    "photo": "/products/oyoqchalar 1.png"
+  },
+  {
+    "id": 59,
+    "name": "Butun tovuq",
+    "price": "52.000 so‘m",
+    "photo": "/products/butun tovuq 1.png"
+  },
+  {
+    "id": 60,
+    "name": "Terisiz file",
+    "price": "34.500 so‘m",
+    "photo": "/products/file 1.png"
+  }
+]

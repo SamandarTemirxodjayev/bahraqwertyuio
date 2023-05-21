@@ -1,6 +1,9 @@
 <template>
   <div class="splash-screen">
-    <div class="spinner-wrapper">
+    <div class="spinner-wrapper items-center flex flex-col">
+      <div>
+        <img src="/chicken.svg" alt="" height="150" width="150" class="my-10">
+      </div>
       <div>
         <div
           style="border-top-color: transparent"
