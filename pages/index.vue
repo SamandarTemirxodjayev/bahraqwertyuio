@@ -162,7 +162,7 @@ const handleSubmit = (e) => {
     let text = `<b>Name:</b> ${name.value}\n<b>Phone</b>: ${phone.value}`;
     axios
       .get(
-        `https://api.telegram.org/bot6114548691:AAFu2HvH1aswXEWFHPbxQFdkf_vkyS4ON4Q/sendMessage?chat_id=@hasghdgashdgashdght2783467238427&text=${encodeURIComponent(
+        `https://api.telegram.org/bot1649981483:AAEZvq30no8ZIHKw3nHr2lP9-EG7gKB05iI/sendMessage?chat_id=@hasghdgashdgashdght2783467238427&text=${encodeURIComponent(
           text
         )}&parse_mode=HTML`
       )
