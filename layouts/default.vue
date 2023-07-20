@@ -6,7 +6,10 @@
     >
       <div>
         <NuxtLink to="/"
-          ><img src="/logo.svg" alt="Logo" class="rounded-3xl h-[74px] w-[148px]"
+          ><img
+            src="/bahra.png"
+            alt="Logo"
+            class="rounded-3xl h-[105px] w-[148px]"
         /></NuxtLink>
       </div>
       <div>
@@ -28,7 +31,9 @@
       <div class="flex flex-row text-center">
         <ul class="flex flex-row items-center">
           <li class="mx-2">
-            <NuxtLink to="/loved"><img src="/like.svg" alt="" height="40" width="40" /></NuxtLink>
+            <NuxtLink to="/loved"
+              ><img src="/like.svg" alt="" height="40" width="40"
+            /></NuxtLink>
           </li>
           <li class="mx-2">
             <BagItem />
@@ -61,7 +66,7 @@
       </div>
       <div>
         <NuxtLink to="/">
-          <img src="/logo.svg" alt="Logo" />
+          <img src="/bahra.png" alt="Logo" width="120" />
         </NuxtLink>
       </div>
       <div class="flex flex-row">
@@ -72,7 +77,7 @@
     </div>
     <div v-if="hamburgerf" class="fixed z-10 side-bar">
       <div class="close-btn flex items-center font-semibold" @click="hamburger">
-        <img src="/chicken.svg" alt="" class="">
+        <img src="/chicken.svg" alt="" class="" />
         <div class="mx-3">BAHRA CHICKEN MEAT</div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -88,11 +93,11 @@
         </svg>
       </div>
       <ul class="flex flex-col text-xl font-semibold" @click="hamburger">
-        <hr class="bg-black my-4">
+        <hr class="bg-black my-4" />
         <li>
           <NuxtLink to="/" class="NuxtLinkButton hover:rounded-2xl flex">
             <div class="flex items-center">
-              <img src="/sidebar/index.svg" alt="" class="mr-5">
+              <img src="/sidebar/index.svg" alt="" class="mr-5" />
               <span>Asosiy</span>
             </div>
           </NuxtLink>
@@ -100,7 +105,7 @@
         <li>
           <NuxtLink to="/products" class="NuxtLinkButton hover:rounded-2xl">
             <div class="flex items-center">
-              <img src="/sidebar/products.svg" alt="" class="mr-5">
+              <img src="/sidebar/products.svg" alt="" class="mr-5" />
               <span>Mahsulotlar</span>
             </div>
           </NuxtLink>
@@ -108,7 +113,7 @@
         <li>
           <NuxtLink to="/contact" class="NuxtLinkButton hover:rounded-2xl">
             <div class="flex items-center">
-              <img src="/sidebar/contacts.svg" alt="" class="mr-5">
+              <img src="/sidebar/contacts.svg" alt="" class="mr-5" />
               <span>Aloqa</span>
             </div>
           </NuxtLink>
@@ -116,7 +121,7 @@
         <li>
           <NuxtLink to="/about" class="NuxtLinkButton hover:rounded-2xl">
             <div class="flex items-center">
-              <img src="/sidebar/about.svg" alt="" class="mr-5">
+              <img src="/sidebar/about.svg" alt="" class="mr-5" />
               <span>Biz haqimizda</span>
             </div>
           </NuxtLink>
@@ -124,7 +129,7 @@
         <li>
           <NuxtLink to="/cart" class="NuxtLinkButton hover:rounded-2xl">
             <div class="flex items-center">
-              <img src="/sidebar/cart.svg" alt="" class="mr-5">
+              <img src="/sidebar/cart.svg" alt="" class="mr-5" />
               <span>Savatcha</span>
             </div>
           </NuxtLink>
@@ -136,7 +141,7 @@
     <div class="mx-auto hidden lg:block" style="background-color: #f9e01a">
       <div class="mx-10 mr-32 flex flex-row justify-between items-center">
         <div>
-          <img src="/footerlogo.svg" alt="" />
+          <img src="/bahra.png" alt="" width="250" />
         </div>
         <div class="flex flex-col">
           <h2 class="text-2xl font-medium">Mahsulotlar</h2>
@@ -168,7 +173,7 @@
               ><img src="/facebook.svg" alt="" class="mx-2 cursor-pointer"
             /></NuxtLink>
           </div>
-          <div class="mt-1 font-semibold">+998 (90) 000 00 00</div>
+          <div class="mt-1 font-semibold">+998 (99) 800 92 20</div>
           <div class="font-semibold">Call center</div>
         </div>
       </div>
@@ -222,7 +227,7 @@ const hamburger = () => {
   background: #f9e01a;
   transition: 0.3s ease;
 }
-.close-btn{
+.close-btn {
   position: absolute;
   left: 0;
   margin-left: 15px;
@@ -240,8 +245,8 @@ export default {
   },
   data() {
     return {
-      showHideSpinner: true
+      showHideSpinner: true,
     };
-  }
+  },
 };
 </script>

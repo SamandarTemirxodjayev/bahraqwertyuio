@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto w-full flex flex-col items-center justify-center mt-20 lg:my-0">
-    <div class="w-full lg:inline-block hidden">
-      <img src="/logo2.svg" alt="" class="mx-auto" />
+    <div class="w-full lg:inline-block hidden bg-yellow-300">
+      <img src="/bahra.png" alt="" class="mx-auto w-[800px]" />
     </div>
     <h1 class="font-semibold lg:text-5xl text-2xl my-[5%] lg:my-[2%] text-center">Kompaniyamiz haqida</h1>
     <div class="flex flex-col lg:flex-row items-center justify-center mx-auto lg:mt-[2%]">
